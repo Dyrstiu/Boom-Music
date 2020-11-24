@@ -3,4 +3,5 @@
     <string name= "Username">Username</string>
     <string name= "Password">Password</string>
     <string name="incorrectPassword">incorrectPassword</string>
+    <string name="usern_icon">usern_icon</string>
 </resources>

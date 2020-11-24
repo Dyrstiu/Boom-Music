@@ -8,4 +8,5 @@ class LoginPage : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login_page)
     }
+    //passwordLayout.error = getString(R.string.error)
 }

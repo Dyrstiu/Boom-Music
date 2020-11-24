@@ -6,40 +6,77 @@
     android:layout_height="match_parent"
     tools:context=".LoginPage">
 
+
+
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/login_card"
         android:layout_height="match_parent"
         android:layout_width="match_parent"
         android:layout_margin="8dp">
+
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="600dp"
             android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="194dp"
+                android:layout_marginTop="44dp"
+                android:contentDescription="@string/usern_icon"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/login_page" />
+
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/user_name"
-                android:layout_width="match_parent"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="34dp"
+                android:layout_marginLeft="44dp"
+                android:layout_marginTop="84dp"
+                android:layout_marginEnd="44dp"
+                android:layout_marginRight="44dp"
                 android:hint="@string/Username"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                app:startIconContentDescription="@string/usern_icon"
+                app:startIconDrawable="@drawable/ic_usern_icon">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="336dp"
-                    android:layout_height="match_parent" />
+                    android:layout_width="262dp"
+                    android:layout_height="match_parent"
+                    android:maxLength="18" />
             </com.google.android.material.textfield.TextInputLayout>
+
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/password_toggle"
-                android:layout_width="match_parent"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="34dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="44dp"
+                android:fadingEdge="vertical"
                 android:hint="@string/Password"
-                app:errorEnabled="true"
                 app:endIconContentDescription="@string/incorrectPassword"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                app:endIconMode="password_toggle"
+                app:errorEnabled="true">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="338dp"
-                    android:layout_height="match_parent"
-                    android:inputType="textPassword" />
+                    android:layout_width="261dp"
+                    android:layout_height="59dp"
+                    android:inputType="textPassword"
+                    android:maxLength="8" />
             </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/loginButton"
+                style="@style/Widget.MaterialComponents.Button.Icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="104dp"
+                android:layout_marginTop="21dp"
+                android:text="Login"
+                app:icon="@drawable/ic_enter" />
         </androidx.appcompat.widget.LinearLayoutCompat>
     </com.google.android.material.card.MaterialCardView>
 
