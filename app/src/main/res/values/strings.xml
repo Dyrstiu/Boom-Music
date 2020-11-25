@@ -4,4 +4,8 @@
     <string name= "Password">Password</string>
     <string name="incorrectPassword">incorrectPassword</string>
     <string name="usern_icon">usern_icon</string>
+    <string name="My_music" > My music</string>
+    <string name="Online">Online music</string>
+    <string name="Search">Search music</string>
+    <string name="Radio">Radio</string>
 </resources>

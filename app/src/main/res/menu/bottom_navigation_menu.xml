@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/my_music"
+        android:enabled="true"
+        android:icon="@drawable/ic_my_music"
+        android:title="@string/My_music"/>
+    <item
+        android:id="@+id/Online_music"
+        android:enabled="true"
+        android:icon="@drawable/ic_online_music"
+        android:title="@string/Online"/>
+    <item
+        android:id="@+id/Currently_playing"
+        android:enabled="true"
+        android:icon="@drawable/ic_sound_waves"
+        android:title="@string/app_name"/>
+    <item
+        android:id="@+id/Search_music"
+        android:enabled="true"
+        android:icon="@drawable/ic_search_music"
+        android:title="@string/Search"/>
+    <item
+        android:id="@+id/Online_radio"
+        android:enabled="true"
+        android:icon="@drawable/ic_radio"
+        android:title="@string/Radio"/>
+
+</menu>
